@@ -34,7 +34,7 @@ public extension String {
      - returns: The formatted localized string with arguments.
      */
     func localizedFormat(arguments: CVarArg..., in bundle: Bundle?) -> String {
-        return String(format: localized(in: bundle), arguments: arguments)
+        return String(format: localized(using: nil, in: bundle), arguments: arguments)
     }
     
     /**
@@ -48,7 +48,7 @@ public extension String {
      - returns: Pluralized localized string.
      */
     func localizedPlural(argument: CVarArg, in bundle: Bundle?) -> String {
-        return NSString.localizedStringWithFormat(localized(in: bundle) as NSString, argument) as String
+        return NSString.localizedStringWithFormat(localized(using: nil, in: bundle) as NSString, argument) as String
     }
     
 }

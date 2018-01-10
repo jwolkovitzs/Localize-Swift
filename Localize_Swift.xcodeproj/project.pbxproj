@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		265C9EB12005C8C500A61AD2 /* LocalizedSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265C9EAD2005C8C400A61AD2 /* LocalizedSegmentedControl.swift */; };
+		265C9EB22005C8C500A61AD2 /* LocalizedSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265C9EAD2005C8C400A61AD2 /* LocalizedSegmentedControl.swift */; };
+		265C9EB32005C8C500A61AD2 /* LocalizedSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265C9EAD2005C8C400A61AD2 /* LocalizedSegmentedControl.swift */; };
+		265C9EB42005C8C500A61AD2 /* LocalizedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265C9EAE2005C8C500A61AD2 /* LocalizedTextField.swift */; };
+		265C9EB52005C8C500A61AD2 /* LocalizedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265C9EAE2005C8C500A61AD2 /* LocalizedTextField.swift */; };
+		265C9EB62005C8C500A61AD2 /* LocalizedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265C9EAE2005C8C500A61AD2 /* LocalizedTextField.swift */; };
+		265C9EB72005C8C500A61AD2 /* LocalizedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265C9EAF2005C8C500A61AD2 /* LocalizedButton.swift */; };
+		265C9EB82005C8C500A61AD2 /* LocalizedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265C9EAF2005C8C500A61AD2 /* LocalizedButton.swift */; };
+		265C9EB92005C8C500A61AD2 /* LocalizedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265C9EAF2005C8C500A61AD2 /* LocalizedButton.swift */; };
+		265C9EBA2005C8C500A61AD2 /* LocalizedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265C9EB02005C8C500A61AD2 /* LocalizedLabel.swift */; };
+		265C9EBB2005C8C500A61AD2 /* LocalizedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265C9EB02005C8C500A61AD2 /* LocalizedLabel.swift */; };
+		265C9EBC2005C8C500A61AD2 /* LocalizedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265C9EB02005C8C500A61AD2 /* LocalizedLabel.swift */; };
+		265C9EBE2005C8CE00A61AD2 /* String+LocalizedUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265C9EBD2005C8CE00A61AD2 /* String+LocalizedUI.swift */; };
+		265C9EBF2005C8CE00A61AD2 /* String+LocalizedUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265C9EBD2005C8CE00A61AD2 /* String+LocalizedUI.swift */; };
+		265C9EC02005C8CE00A61AD2 /* String+LocalizedUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265C9EBD2005C8CE00A61AD2 /* String+LocalizedUI.swift */; };
 		3433F2411C518AF7003AE34D /* Localize_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3433F2361C518AF7003AE34D /* Localize_Swift.framework */; };
 		3433F2461C518AF7003AE34D /* Localize_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3433F2451C518AF7003AE34D /* Localize_SwiftTests.swift */; };
 		3433F2521C518B38003AE34D /* Localize_Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 3433F2501C518B38003AE34D /* Localize_Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -46,6 +61,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		265C9EAD2005C8C400A61AD2 /* LocalizedSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalizedSegmentedControl.swift; path = Sources/LocalizedSegmentedControl.swift; sourceTree = SOURCE_ROOT; };
+		265C9EAE2005C8C500A61AD2 /* LocalizedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalizedTextField.swift; path = Sources/LocalizedTextField.swift; sourceTree = SOURCE_ROOT; };
+		265C9EAF2005C8C500A61AD2 /* LocalizedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalizedButton.swift; path = Sources/LocalizedButton.swift; sourceTree = SOURCE_ROOT; };
+		265C9EB02005C8C500A61AD2 /* LocalizedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalizedLabel.swift; path = Sources/LocalizedLabel.swift; sourceTree = SOURCE_ROOT; };
+		265C9EBD2005C8CE00A61AD2 /* String+LocalizedUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+LocalizedUI.swift"; path = "Sources/String+LocalizedUI.swift"; sourceTree = SOURCE_ROOT; };
 		3433F2361C518AF7003AE34D /* Localize_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Localize_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3433F23B1C518AF7003AE34D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3433F2401C518AF7003AE34D /* Localize_SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Localize_SwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +152,11 @@
 		3433F2381C518AF7003AE34D /* Localize_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				265C9EAF2005C8C500A61AD2 /* LocalizedButton.swift */,
+				265C9EB02005C8C500A61AD2 /* LocalizedLabel.swift */,
+				265C9EAD2005C8C400A61AD2 /* LocalizedSegmentedControl.swift */,
+				265C9EAE2005C8C500A61AD2 /* LocalizedTextField.swift */,
+				265C9EBD2005C8CE00A61AD2 /* String+LocalizedUI.swift */,
 				3433F2501C518B38003AE34D /* Localize_Swift.h */,
 				3433F2511C518B38003AE34D /* Localize.swift */,
 				68A520031DA6D5FD00F43D9E /* String+LocalizeTableName.swift */,
@@ -369,9 +394,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				265C9EB72005C8C500A61AD2 /* LocalizedButton.swift in Sources */,
 				68973D6B1DA7AB140076F08A /* String+LocalizedBundleTableName.swift in Sources */,
+				265C9EB42005C8C500A61AD2 /* LocalizedTextField.swift in Sources */,
 				68973D661DA7AA200076F08A /* String+LocalizeBundle.swift in Sources */,
+				265C9EBE2005C8CE00A61AD2 /* String+LocalizedUI.swift in Sources */,
+				265C9EB12005C8C500A61AD2 /* LocalizedSegmentedControl.swift in Sources */,
 				3433F2531C518B38003AE34D /* Localize.swift in Sources */,
+				265C9EBA2005C8C500A61AD2 /* LocalizedLabel.swift in Sources */,
 				68A520041DA6D5FD00F43D9E /* String+LocalizeTableName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,7 +410,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				265C9EB22005C8C500A61AD2 /* LocalizedSegmentedControl.swift in Sources */,
+				265C9EB52005C8C500A61AD2 /* LocalizedTextField.swift in Sources */,
 				3433F2461C518AF7003AE34D /* Localize_SwiftTests.swift in Sources */,
+				265C9EB82005C8C500A61AD2 /* LocalizedButton.swift in Sources */,
+				265C9EBF2005C8CE00A61AD2 /* String+LocalizedUI.swift in Sources */,
+				265C9EBB2005C8C500A61AD2 /* LocalizedLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,9 +434,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				265C9EB92005C8C500A61AD2 /* LocalizedButton.swift in Sources */,
 				68973D6D1DA7AB140076F08A /* String+LocalizedBundleTableName.swift in Sources */,
+				265C9EB62005C8C500A61AD2 /* LocalizedTextField.swift in Sources */,
 				68973D681DA7AA200076F08A /* String+LocalizeBundle.swift in Sources */,
+				265C9EC02005C8CE00A61AD2 /* String+LocalizedUI.swift in Sources */,
+				265C9EB32005C8C500A61AD2 /* LocalizedSegmentedControl.swift in Sources */,
 				343A6DDF1D152B1B0081AA37 /* Localize.swift in Sources */,
+				265C9EBC2005C8C500A61AD2 /* LocalizedLabel.swift in Sources */,
 				68A520061DA6D5FD00F43D9E /* String+LocalizeTableName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

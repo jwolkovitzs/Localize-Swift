@@ -22,19 +22,49 @@ public extension String {
      
      - returns: The localized string.
      */
-    func localized(using tableName: String?, in bundle: Bundle?) -> String {
-        let bundle: Bundle = bundle ?? .main
+    func localized(using tableName: String? = nil, tables:[String]? = nil, in bundle: Bundle?) -> String {
+        func localizedString(bundle: Bundle? = nil) -> String {
+            var localizedString = ""
+            var tableNames : [String] = []
+            if let tableName = tableName {
+                tableNames.append(tableName)
+            } else if let tables = tables {
+                tableNames.append(contentsOf: tables)
+            }
+            let noLocalizedString = "no localized string"
+            if let bundle = bundle {
+                for i in 0..<tableNames.count {
+                    localizedString = bundle.localizedString(forKey: self, value: noLocalizedString, table: tableNames[i])
+                    if localizedString != noLocalizedString {
+                        break
+                    }
+                }
+                if localizedString.count == 0 {
+                    localizedString = bundle.localizedString(forKey: self, value: noLocalizedString, table: nil)
+                }
+            }
+            if localizedString == noLocalizedString {
+                #if LOCALIZATION_DEBUG
+                    print("\(noLocalizedString) => \(self)")
+                    return "##\(self)##"
+                #else
+                    return self
+                #endif
+            }
+            return localizedString
+        }
+        let bundle: Bundle = .main
         if let path = bundle.path(forResource: Localize.currentLanguage(), ofType: "lproj"),
             let bundle = Bundle(path: path) {
-            return bundle.localizedString(forKey: self, value: nil, table: tableName)
+            return localizedString(bundle: bundle)
         }
         else if let path = bundle.path(forResource: LCLBaseBundle, ofType: "lproj"),
             let bundle = Bundle(path: path) {
-            return bundle.localizedString(forKey: self, value: nil, table: tableName)
+            return localizedString(bundle: bundle)
         }
-        return self
+        return localizedString()
     }
-    
+
     /**
      Swift 2 friendly localization syntax with format arguments, replaces String(format:NSLocalizedString).
      
